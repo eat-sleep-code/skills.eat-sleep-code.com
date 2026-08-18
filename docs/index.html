@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eat-sleep-code React — Personal house style and conventions packaged as a Claude Skill">
+    <meta name="theme-color" content="#0a0e27">
+    <title>eat-sleep-code AI Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0d1117;
+            color: #e6edf3;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #FFFFFF;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #8b949e;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .content-box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 3rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #00bcd4;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #c9d1d9;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        p:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            background: #00bcd4;
+            color: #0d1117;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            background: #00d4e4;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(0, 188, 212, 0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0, 188, 212, 0.2);
+        }
+
+        .features {
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid #30363d;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feature-icon {
+            color: #00bcd4;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .feature-text {
+            color: #c9d1d9;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #6e7681;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer a:hover {
+            color: #00d4e4;
+        }
+
+        @media (max-width: 600px) {
+            .content-box {
+                padding: 2rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+		<div class="header">
+            <div class="logo">&lt;eat-sleep-code /&gt; AI Skills</div>
+        </div>
+        <div class="content-box">
+            <h2>eat-sleep-code-react</h2>
+
+            <p>
+                Personal house style and conventions for React projects (Vite + Cloudflare Pages/Workers, Tailwind, react-router) — packaged as a Claude Skill.
+            </p>
+
+            <p>
+                This isn't a library or framework — it's a standing set of conventions (i18n structure, light/dark mode, accessibility, PWA setup, backend security patterns, a deployment checklist, and more) that Claude reads and applies automatically when helping build or edit a React project, so every project comes out consistent with the last one instead of re-deciding the same defaults each time.
+            </p>
+
+            <a href="https://github.com/eat-sleep-code/skills.eat-sleep-code.com/raw/refs/heads/main/claude/eat-sleep-code-react.skill" class="cta-button" download>
+                Download Skill
+            </a>
+
+            <div class="features">
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">🌐</div>
+                        <div class="feature-text">i18n Structure</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌙</div>
+                        <div class="feature-text">Light/Dark Mode</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">♿</div>
+                        <div class="feature-text">Accessibility</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <div class="feature-text">PWA Setup</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <div class="feature-text">Security Patterns</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✅</div>
+                        <div class="feature-text">Deploy Checklist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; <script>new Date().getFullYear()</script> &lt;eat-sleep-code.com&gt;.  All rights reserved. 
+			&nbsp;|&nbsp;
+			<a href="https://eat-sleep-code.com/privacy" target="_blank">Privacy Policy</a>
+			&nbsp;|&nbsp;
+			<a href="https://eat-sleep-code.com/terms-of-use" target="_blank">Terms of Use</a>
+        </div>
+    </div>
+</body>
+</html>
